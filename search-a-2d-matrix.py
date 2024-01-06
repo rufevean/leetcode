@@ -1,4 +1,6 @@
 def list_find(matrix: list[list[int]],target :int) -> bool :
+    if len(matrix) == 0:
+        return False
     n = 0 
     while target > matrix[n][-1]:
         if target <= matrix[-1][-1]:
